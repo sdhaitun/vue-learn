@@ -14,7 +14,12 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "css-loader": "^0.26.2",
+    "file-loader": "^0.10.1",
     "jquery": "^3.1.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
     "vue": "^2.2.1",
     "vue-router": "^2.2.0"
   },

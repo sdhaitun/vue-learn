@@ -65,6 +65,8 @@
 
 <script>
 import $ from 'jquery'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap/dist/js/bootstrap.min'
 
 export default {
   name: 'hello',
@@ -101,7 +103,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped> 
 h1, h2 {
   font-weight: normal;
 }
