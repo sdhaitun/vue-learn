@@ -41,7 +41,7 @@ export default new Router({
         a: Hello
       },
       children: [
-        { path: '', component: UserHome },
+        { path: '', components: { default: UserPosts, m: UserHome } },
         { path: 'profile', component: UserProfile }
       ]
     }
