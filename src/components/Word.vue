@@ -67,12 +67,15 @@
 import $ from 'jquery'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.min'
+import a from '../assets/js/a.js'
+// import '../assets/js/m.js'
+import ms from '../assets/js/m.js'
 
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'i',
+      msg: 'is',
       a: true
     }
   },
@@ -92,7 +95,9 @@ export default {
   },
   watch: {
     a: function (ne, ol) {
-      alert($('.hello h1').text())
+      // alert($('.hello h1').text())
+      ms(this.msg)
+      alert(a.a())
     },
     msg: function (ne, ol) {
       console.log(ne)

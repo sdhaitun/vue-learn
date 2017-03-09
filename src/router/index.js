@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Word from '@/components/Word'
+import mkd from '@/components/markdown'
 
 Vue.use(Router)
 
@@ -44,6 +45,10 @@ export default new Router({
         { path: '', component: UserHome },
         { path: 'profile', component: UserProfile }
       ]
+    },
+    {
+      path: '/mk',
+      component: mkd
     }
   ]
 })
