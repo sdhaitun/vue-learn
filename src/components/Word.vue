@@ -4,8 +4,9 @@
     <h2>Essential Links</h2>
     <router-link to="/" replace>根</router-link><br>
     <router-link to="/a/profile">profile</router-link>
-    <router-link to="/a">a</router-link>
+    <router-link to="/m">a</router-link>
     <router-view></router-view>
+    <router-view name="a"></router-view>
     <button @click="a=!a">a</button><br>
     <p v-if="a">s</p>
     <input v-model="msg"/><br><br>
@@ -75,7 +76,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'is',
+      msg: 'word',
       a: true
     }
   },
